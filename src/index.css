@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  letter-spacing: 0.01em;
+  background-color: #09090b;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+/* Dark Fantasy Glass Window Panel */
+.rpg-panel {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+}
+
+/* High contrast RPG floating damage text */
+.text-stroke-black {
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+@keyframes wave-shake {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  15% { transform: translate(-2.5px, 2.5px) rotate(-0.3deg); }
+  30% { transform: translate(3px, -2px) rotate(0.35deg); }
+  45% { transform: translate(-3px, 1.5px) rotate(-0.25deg); }
+  60% { transform: translate(2px, -2.5px) rotate(0.2deg); }
+  75% { transform: translate(-1.5px, 2px) rotate(-0.1deg); }
+  90% { transform: translate(1px, -1px) rotate(0.05deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.animate-wave-shake {
+  animation: wave-shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes wave-flash-gold {
+  0% { opacity: 0.85; transform: scale(1.01); }
+  25% { opacity: 0.6; }
+  100% { opacity: 0; transform: scale(1); }
+}
+
+@keyframes wave-flash-red {
+  0% { opacity: 0.8; transform: scale(1.01); }
+  25% { opacity: 0.55; }
+  100% { opacity: 0; transform: scale(1); }
+}
+
+.animate-wave-flash-gold {
+  animation: wave-flash-gold 0.75s ease-out forwards;
+}
+
+.animate-wave-flash-red {
+  animation: wave-flash-red 0.65s ease-out forwards;
+}

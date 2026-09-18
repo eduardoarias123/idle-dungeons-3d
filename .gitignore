@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+*.log.*
+.env*
+!.env.example
+
+# Banco de dados, logs e feedbacks gerados em runtime pelo servidor
+data/
+
+# Scripts temporários de correção/depuração
+tmp_*
+*.orig
+*.bak

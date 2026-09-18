@@ -1,0 +1,6 @@
+{
+  "name": "Tibia Dungeons: 3D Idle MMORPG",
+  "description": "A 3D isometric browser MMORPG-Idle inspired by Tibia mechanics and Minecraft Dungeons visuals with authoritative server, vocations, hunts, auto-combat, and offline progression.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
